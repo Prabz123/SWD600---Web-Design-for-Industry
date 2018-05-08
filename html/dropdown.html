@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Dropdown Button</title>
+	
+<style>
+body
+{
+	font-family:helvetica,sans-serif, arial;
+}
+
+.btndown
+{
+	background-color: #3bb09f;
+	color: #fff;
+	padding: 16px;
+	font-size: 14px;
+	border: none;
+	curser: pointer;
+}
+
+.drop
+{
+	position: relative;
+	display: inline-block;
+}
+
+.wrap
+{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 124px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.wrap a
+{
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.wrap a:hover
+{
+	background-color: #f1f1f1;
+}
+
+.drop:hover .wrap
+{
+	display: block;
+}
+
+.drop:hover .btndown
+{
+	background-color: #4cbf50;
+}
+</style>
+<head>
+<body>
+	<h1>Drop Down Button Example</h1>
+	<div class="container">
+		<div class="drop">
+			<button class="btndown">Dropdown</button>
+			<div class="wrap">
+				<a href="#">Item 1</a>
+				<a href="#">Item 2</a>
+				<a href="#">Item 3</a>
+				<a href="#">Item 4</a>
+				<a href="#">Item 5</a>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

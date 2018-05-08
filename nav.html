@@ -1,0 +1,206 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<title>Pattern Library | Nav</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	<link rel="stylesheet" href="elements.css" type="text/css"/>
+	<link rel="stylesheet" href="dropdown.css" type="text/css"/>
+	<meta name="viewport" content="width=device-width">
+	
+<style>
+.boxed {
+  border: 1px solid green;
+  text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div id="branding">
+			  <h1><span class="highlight">Web Design</span> For <span class="highlight">Industry</span></h1>
+			</div>
+
+			<nav>
+				<ul>
+				<li class="current"><a href="index.html">Home</a></li>
+					  <li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Components</a>
+						<div class="dropdown-content">
+						  <a href="nav.html">Nav Bar</a>
+						  <a href="carousel.html">Carousel</a>
+						  <a href="buttons.html">Buttons</a>
+						  <a href="jumbotron.html">Jumbotron</a>
+						  <a href="footer.html">Footer</a>
+						  <a href="breadcrumb.html">Breadcrumb</a>
+						</div>
+					  </li>
+					</ul>
+			</nav>
+		</div>
+	</header>
+	
+
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+				<h2 class="page-title">Navigation Bar</h2>
+				<h2>Example</h2>
+				<header>
+		<div class="container">
+			<nav>
+				<ul>
+				<li class="current"><a href="#">Home</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+				<ul id="carousel">
+					
+					<li>
+						<h2>What is it?</h2>
+						<p>
+						Navigation bar as it's name suggests is quite simply an element which allows the
+						user to navigate around a website. The navigation stands as one of the more important
+						features of a website as without it, the user would not be able to navigate.
+						</p>				
+					</li>
+					
+					<li>			
+						<h2>HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the menu bar. The working example is similar to the navigation bar 
+						of this Pattern Library. It is a simple navigation bar focused for the horizontal approach.
+						</p>	
+<div class="boxed">						 
+<xmp>
+<html lang="en">
+<head>
+
+</head>
+<body>
+	<header>
+		<div class="container">
+			<nav>
+				<ul>
+				<li class="current"><a href="#">Home</a></li>
+					<li><a href="#">Page 1</a></li>
+					<li><a href="#">Page 2</a></li>
+					<li><a href="#">Page 3</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+</body>
+</html>
+ </xmp> 
+ </div>						
+					</li>
+					
+					<li>			
+						<h2>CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the menu bar. The CSS styling copies exactly that of the main
+						navigation bar of this Pattern Library. With any modern navigation bar, the CSS code shows 
+						features for hovering over menu tabs.
+						</p>	
+ <div class="boxed">						 
+ <xmp>
+/* Header Section */
+header
+{
+	background: #35424a;
+	color: #ffffff;
+	padding-top: 30px;
+	min-height: 70px;
+	border-bottom: #e8491d 3px solid;
+}
+
+/* Navigation Links */
+header a
+{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 16px;
+}
+
+/* Navigation List Items */
+header li
+{
+	float: left;
+	display: inline;
+	padding: 0 20px 0 20px;
+}
+
+/* Header Navigation Bar */
+header nav
+{
+	float: right;
+	margin-top: 10px;
+}
+
+/* Highlight Current Page/And/Or Text */
+header .highlight, header .current a
+{
+	color: #e8491d;
+	font-weight: bold;
+}
+
+/* Hover Over Page Link */
+header a:hover
+{
+	color: #ff8000;
+	font-weight: bold;
+}
+ </xmp> 
+ </div>						
+					</li>
+				</ul>
+			</article>
+			
+			<aside id="sidebar">
+				<div class="dark">
+					<div class="dark-img">
+						<h2>Component Usage</h2>
+						<p>
+						Navigation bars are commonly found on either the top of the page or vertically
+						on either the left or the right side of the page, it allows the user to navigate around 
+						the site and view different pages.</p>
+						<br>
+						<h3>Horizontal Menu Bar</h3>
+						<p>
+						Horizontal navigation bars are the more preferred approach when it comes to adding navigation 
+						on a website. Horizontal navigation allows the user to clearly see all the links, furthermore
+						it is effective because people are already accustomed to reading from left to right of the screen.</p>
+						<p>
+						<br>
+						<h3>Vertical Menu Bar</h3>
+						<p>
+						Vertical navigation bars are not that common but still used in most sites. These menus are often 
+						incorporated into graphic intensive websites such as portfolio, restaurant, salon, spa etc. Using a
+						vertical menu bar is greatly used if there are going to be a lot of menu links and tabs to display.</p>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<footer>
+		<p>Web Design For Industry - SWD600 (Copyright &copy; 2018)</p>
+	</footer>
+	
+</body>
+</html> 

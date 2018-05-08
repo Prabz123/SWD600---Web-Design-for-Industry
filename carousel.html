@@ -1,0 +1,214 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<title>Pattern Library | Carousel</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	<link rel="stylesheet" href="dropdown.css" type="text/css"/>
+	<meta name="viewport" content="width=device-width">
+	
+<style>
+.con
+{
+	width: 512px;
+	height: 256px;
+	border: 5px solid red;
+	margin: 50px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+
+  color: white;
+}
+
+.img
+{
+	position: absolute;
+	width: 512px;
+	height: 256px;
+	animation: mm 15s infinite;
+	-webkit-animation: mm 15s infinite;
+	opacity: 0;
+}
+
+@keyframes mm
+{
+	10%{opacity:1}
+	50%{opacity:0}
+}
+
+@-webkit-keyframes mm
+{
+	10%{opacity:1}
+	50%{opacity:0}
+}
+
+img:nth-child(0){animation-delay: 0s; -webkit-animation-delay: 0s; }
+img:nth-child(1){animation-delay: 5s; -webkit-animation-delay: 5s;}
+img:nth-child(2){animation-delay: 10s; -webkit-animation-delay: 10s;}
+
+.boxed {
+  border: 1px solid green;
+  text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div id="branding">
+			  <h1><span class="highlight">Web Design</span> For <span class="highlight">Industry</span></h1>
+			</div>
+
+			<nav>
+				<ul>
+				<li class="current"><a href="index.html">Home</a></li>
+					  <li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Components</a>
+						<div class="dropdown-content">
+						  <a href="nav.html">Nav Bar</a>
+						  <a href="carousel.html">Carousel</a>
+						  <a href="buttons.html">Buttons</a>
+						  <a href="jumbotron.html">Jumbotron</a>
+						  <a href="footer.html">Footer</a>
+						  <a href="breadcrumb.html">Breadcrumb</a>
+						</div>
+					  </li>
+					</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+				<h2 class="page-title">Carousel</h2>
+					<div class="con">
+						<img src="img/1.jpg" class="img">
+						<img src="img/2.jpg" class="img">
+						<img src="img/3.jpg" class="img">
+					</div>
+					
+				<ul id="carousel">
+					<li>
+						<h2>Working example</h2>
+						<p>As shown above, this example is not a manuel slideshow where 
+						the user can click arrows to navigate to the next image but instead 
+						the carousel is automatic using keyframes.</p>
+					</li>
+					<li>
+						<h2>What is it?</h2>
+						<p>Carousels can be found on the home page of a particular website.
+						They are mainly used to present information or images. they may be
+						found on the home page to provide basic context for the website.</p>
+					</li>
+					<li>
+						<h2>HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the Carousel. The working example is automatic and requires no interaction
+						between the user. This animation has been done using keyframes established in the CSS.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">
+ <head>
+	<meta charset="UTF-8">
+ </head>
+ <body>
+	<h1>Slider</h1>
+	<div class="con">
+		<img src="1.jpg" class="img">
+		<img src="2.jpg" class="img">
+		<img src="3.jpg" class="img">
+	</div>
+ </body>
+ </html>
+ 
+ </xmp> 
+ </div>						
+					</li>
+					
+					<li>
+						<h2>CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Carousel. Reaching the end of the script, you will see keyframes, 
+						keyframes enables the carousel to be automatic.
+						</p>	
+<div class="boxed">						 
+<xmp>
+/* Border and Body of Carousel */
+.con
+{
+	width: 512px;
+	height: 256px;
+	border: 5px solid red;
+	margin: 50px auto;
+	overflow: hidden;
+	position: relative;
+}
+
+/* Placing and sorting out Images in Carousel */
+.img
+{
+	position: absolute;
+	width: 512px;
+	height: 256px;
+	animation: mm 15s infinite;
+	-webkit-animation: mm 15s infinite;
+	opacity: 0;
+}
+
+/* Animation and transition between Images */
+@keyframes mm
+{
+	10%{opacity:1}
+	50%{opacity:0}
+}
+
+/* Enabling animation to work on different Browsers */
+@-webkit-keyframes mm
+{
+	10%{opacity:1}
+	50%{opacity:0}
+}
+
+/* Sorting out and animating Images in order of display using "nth-child" */
+img:nth-child(0){animation-delay: 0s; -webkit-animation-delay: 0s; }
+img:nth-child(1){animation-delay: 5s; -webkit-animation-delay: 5s;}
+img:nth-child(2){animation-delay: 10s; -webkit-animation-delay: 10s;}
+ </xmp> 
+ </div>						
+					</li>
+				</ul>
+			</article>
+			
+			<aside id="sidebar">
+				<div class="dark">
+					<div class="dark-img">
+						<h2>Component Usage</h2>
+						<p>Image carousels aren't widely used in many websites. They usually 
+						house and showcase photos/images, advertise a company's products or 
+						simply capture the attention of users using your website.</p>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+	
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<footer>
+		<p>Web Design For Industry - SWD600 (Copyright &copy; 2018)</p>
+	</footer>
+	
+</body>
+</html> 

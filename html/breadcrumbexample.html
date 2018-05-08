@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Breadcrumb</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body
+{
+	padding-top: 100px;
+	text-align: center;
+	font-size: 15px;
+}
+
+/* Properties of the main breadcrumb element */
+.breadcrumb
+{
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0,0,0,0.6);
+	border-radius: 5px;
+	overflow: hidden;
+	counter-reset: flag;
+}
+
+/* Styling of the hyperlink within the breadcrumb */
+.breadcrumb a
+{
+	display: block;
+	float: left;
+	text-decoration: none;
+	padding: 0 10px 0 60px;
+	line-height: 36px;
+	background: linear-gradient(#5DA6E1, #185282);
+	color: white;
+	position: relative;
+}
+
+/* Styling for hovering over breadcrumb menus */
+.breadcrumb a.active, .breadcrumb a:hover
+{
+	background: linear-gradient(#64D86A, #1D7521);
+}
+
+/* Colour changes when hovering over before and after */
+.breadcrumb a.active:after, .breadcrumb a:hover:after
+{
+	background: linear-gradient(135deg,#64D86A, #1D7521);
+}
+
+/* Properties of the breadcrumb after hover */
+.breadcrumb a:after
+{
+	content:'';
+	width: 36px;
+	height: 36px;
+	background: linear-gradient(135deg,#5DA6E1, #185282);;
+	
+	position: absolute;
+	top: 0px;
+	
+	z-index: 1;
+	right: -18px;
+	
+	-webkit-transform: scale(0.707) rotate(45deg);
+	-moz-transform: scale(0.707) rotate(45deg);
+	-o-transform: scale(0.707) rotate(45deg);
+	transform: scale(0.707) rotate(45deg);
+	
+	border-radius: 0 0 0 30px;
+	
+	box-shadow: 2px -2px 1px 1px rgba(0,0,0,0.5),
+	  3px -2px 1px 1px rgba(255,255,255,0.6);
+}
+
+.breadcrumb a:last-child
+{
+	padding-right: 20px;
+	border-radius: 0 5px 5px 0;
+}
+
+/* Styling before breadcrumb is clicked on */
+.breadcrumb a:before
+{
+	content: counter(flag);
+	counter-increment: flag;
+	
+	width: 20px;
+	height: 20px;
+	
+	background: #0E2F4A;
+	font-weight: bold;
+	
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	
+	line-height: 20px;
+	margin: 8px 0;
+	
+	border-radius: 100%;
+}
+</style>
+</head>
+<body>
+
+	<h1>Breadcrumb Example</h1>
+	
+	<div class="breadcrumb">
+		<a href="#" class="active">Choose Product</a>
+		<a href="#">Choose Style</a>
+		<a href="#">Billing Address</a>
+		<a href="#">Checkout</a>
+	</div>
+	
+</body>
+</html>	

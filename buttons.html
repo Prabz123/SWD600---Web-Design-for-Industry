@@ -1,0 +1,736 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+	<title>Pattern Library | Buttons</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="main.css" type="text/css"/>
+	<link rel="stylesheet" href="dropdown.css" type="text/css"/>
+	<meta name="viewport" content="width=device-width">
+<style>
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  font-family: Arial;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #35424a;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.boxed {
+  border: 1px solid green;
+  text-align: left;
+}
+</style>
+</head>
+
+<body>
+
+	<header>
+		<div class="container">
+			<div id="branding">
+			  <h1><span class="highlight">Web Design</span> For <span class="highlight">Industry</span></h1>
+			</div>
+
+			<nav>
+				<ul>
+				<li class="current"><a href="index.html">Home</a></li>
+					  <li class="dropdown">
+						<a href="javascript:void(0)" class="dropbtn">Components</a>
+						<div class="dropdown-content">
+						  <a href="nav.html">Nav Bar</a>
+						  <a href="carousel.html">Carousel</a>
+						  <a href="buttons.html">Buttons</a>
+						  <a href="jumbotron.html">Jumbotron</a>
+						  <a href="footer.html">Footer</a>
+						  <a href="breadcrumb.html">Breadcrumb</a>
+						</div>
+					  </li>
+					</ul>
+			</nav>
+		</div>
+	</header>
+
+	
+	<section id="main">
+		<div class="container">
+			<article id="main-col">
+				<h2 class="page-title">Buttons</h2>
+				
+				<ul id="carousel">
+					<li>
+						<h2>Working example</h2>
+						<p>Use the menu below to see some examples on a seperate page.</p>
+						<div class="navbar">
+						  <div class="dropdown">
+							<button class="dropbtn">Buttons</button>
+							<div class="dropdown-content">
+							  <a href="html/dropdown.html">Dropdown</a>
+							  <a href="html/ghost.html">Ghost</a>
+							  <a href="html/hoveranimation.html">Hover</a>
+							  <a href="html/icons.html">Icon</a>
+							  <a href="html/sizablebuttons.html">Sizable</a>
+							  <a href="html/submit.html">Submit Button</a>
+							</div>
+						  </div> 
+						</div>
+					</li>
+					<li>
+						<h2>What is it?</h2>
+						<p>Buttons are interactive elements that are used to initiate an action 
+						 or response triggered by the user. Buttons provide usability for most applications and websites. The 
+						 working examples above show a range of six button types. A few of 
+						 these buttons might be more common on most sites. </p>
+					</li>
+					
+					<li>
+						<h2>No 1. Dropdown Button HTML Source Code</h2>
+						<h1>Drop Down Button Example</h1>
+						<p>
+						Below is the HTML source code for the Dropdown button. The working example allows the user to hover
+						over the button, this will enable more dropdown options to be available for the user.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">>
+ <head>
+	<meta charset="utf-8"/>
+ <head>
+ <body>
+	<div class="container">
+		<div class="dropdown">
+			<button class="btndown">Dropdown</button>
+			<div class="wrap">
+				<a href="#">Item 1</a>
+				<a href="#">Item 2</a>
+				<a href="#">Item 3</a>
+				<a href="#">Item 4</a>
+				<a href="#">Item 5</a>
+			</div>
+		</div>
+	</div>
+ </body>
+ </html>
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 1. Dropdown Button CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Dropdown button. The button is turquiose in colour,
+						but will change colour to a light green when the user hovers over it as it showcases more menu tabs. 
+						These properties have been ammended in the CSS code.
+						</p>	
+<div class="boxed">						 
+<xmp>
+/* Body font */
+ body
+{
+	font-family:helvetica,sans-serif, arial;
+}
+
+/* Main styling of the dropdown button */
+.btndown
+{
+	background-color: #3bb09f;
+	color: #fff;
+	padding: 16px;
+	font-size: 14px;
+	border: none;
+	curser: pointer;
+}
+
+/* Display dropdown menus */
+.dropdown
+{
+	position: relative;
+	display: inline-block;
+}
+
+/* Styling of dropdown menu items */
+.wrap
+{
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 124px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Colour when user views menu item links */
+.wrap a
+{
+	color: #000;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Colour when user hovers over menu items */
+.wrap a:hover
+{
+	background-color: #f1f1f1;
+}
+
+/* Displaying hover effect on dropdown menu */
+.dropdown:hover .wrap
+{
+	display: block;
+}
+
+/* Displaying background colour on dropdown menu items */
+.dropdown:hover .btndown
+{
+	background-color: #4cbf50;
+}
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 2. Ghost Button HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the Ghost button. The working 
+						example shows nothing on the page however when the user hovers over the button, it will appear
+						in a ghostly effect.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">
+ <head>
+	<meta charset="UTF-8">
+ </head>
+ <body>
+	<button class="ghost">Click me</button>
+ </body>
+ </html>
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 2. Ghost Button CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Ghost button. The CSS effect will enable the button
+						to initially be invisible for the user but will only appear if the mouse hovers over it.
+						</p>	
+<div class="boxed">						 
+<xmp>
+/* Setting a background image */
+ body
+{
+	background: url(1.jpg);
+}
+
+/* Properties of the Ghost button */
+.ghost
+{
+	border: 1px solid white;
+	background-color: rgba(225,255,255,0);
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 100px;
+	transition: 0.6s;
+}
+
+/* Setting properites for hovering over the button */
+.ghost:hover
+{
+	background-color: rgba(225,255,255,1);
+	color: #000;
+}
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 3. Hover Button HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the Hover button. The working 
+						example shows a button with the text "hover over me". When the user hovers 
+						over the button, the text will change into an icon through an animated effect.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">
+ <head>
+	<link rel="stylesheet" href="http://code.ionicframework.com/
+	ionicons/2.0.1/css/ionicons.min.css">
+ </head>
+ <body>
+	<div class="btn">
+	</div>
+ </body>
+ </html>
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 3. Hover Button CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Hover button. The CSS will enable the button to 
+						show a hover effect when the user hovers over the button. 
+						</p>	
+<div class="boxed">						 
+<xmp>
+/* Adding background color */
+ body
+{
+	background: #eee;
+}
+
+/* Properties of the main button */
+.btn
+{
+	width: 160px;
+	height: 50px;
+	background: tomato;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	transition: all 0.5s;
+	overflow: hidden;
+}
+
+/* Properties of button before any changes */
+.btn:before
+{
+	content: "hover over me";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s;
+}
+
+/* Setting hovering before height */
+.btn:hover:before
+{
+	top: -30px;
+}
+
+/* Properties showcasing after hovering over button */
+.btn:after
+{
+	font-family: 'ionicons';
+	content: '\f43a';
+	position: absolute;
+	top: calc(100% + 30px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	transition: all 0.3s;
+}
+
+/* Setting hovering after height */
+.btn:hover:after
+{
+	top: 50%;
+}
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 4. Icon Buttons HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the Icon buttons. The working 
+						example shows a range of buttons with icons and also a range of buttons
+						with icons and text. The icons uses an external style sheet which is from "Font Awesome" 
+						in order to display the icons onto the buttons.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">
+ <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-
+	awesome/4.7.0/css/font-awesome.min.css">
+ </head>
+
+ <body>
+	<link rel="stylesheet" href="style.css">
+
+	<h1>Icon Button Examples</h1>
+	
+	<button class="btn"><i class="fa fa-android"></i></button>
+	<button class="btn"><i class="fa fa-apple"></i></button>
+	<button class="btn"><i class="fa fa-windows"></i></button>
+	<button class="btn"><i class="fa fa-car"></i></button>
+	<button class="btn"><i class="fa fa-motorcycle"></i></button>
+	
+	<p>Icon buttons with text:</p>
+	
+	<button class="btn"><i class="fa fa-android"></i> Android</button>
+	<button class="btn"><i class="fa fa-apple"></i> Apple</button>
+	<button class="btn"><i class="fa fa-windows"></i> Windows</button>
+	<button class="btn"><i class="fa fa-car"></i> Car</button>
+	<button class="btn"><i class="fa fa-motorcycle"></i> Motorcycle</button>
+ </body>
+ </html>
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 4. Icon Buttons CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Icon buttons. The CSS styling
+						shows orange buttons with white text and icons. In addition there is also a 
+						dark green hover effect when the user hovers over a particular button.
+						</p>	
+<div class="boxed">						 
+<xmp>
+/* Propertties of the main button */
+ .btn
+{
+	background-color: OrangeRed;
+	border: none;
+	color: white;
+	padding: 12px 16px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+/* Setting colour when hovering over button */
+.btn:hover
+{
+	background-color: Olive;
+}
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 5. Sizable Buttons HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the Sizable Buttons. It shows a range of
+						5 buttons in different sizes. The 1st button example shown is the standard 
+						button which is usually seen on forms. The rest of the buttons ar eplaced 
+						in size order from small to extra large.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">
+ <head>
+ </head>
+ <body>
+	<p><button>Submit</button><p>
+	<p><button class="btn btn-sm">Small</button></p>
+	<p><button class="btn btn-med">Medium</button></p>
+	<p><button class="btn btn-lg">Large</button></p>
+	<p><button class="btn btn-xl">Extra Large</button></p>
+ </body>
+ </html>
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 5. Sizable Buttons CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Sizable Buttons. It shows individuel CSS classifications
+						for all 5 buttons displayed. The buttons are coloured from red, yellow and green to differentiate
+						from one another.
+<div class="boxed">						 
+<xmp>
+/* Properties of default button */
+ .btn
+{
+	display: inline-block;
+	border: none;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 4px;
+	
+}
+
+/* Properties of small button */
+.btn-sm
+{
+	color: #fff;
+	background-color: #ff0000;
+	border-color: #4cae4c;
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+/* Properties of medium button */
+.btn-med
+{
+	color: #000000;
+	background-color: #ffff66;
+	border-color: #4cae4c;
+	padding: 5px 10px;
+	font-size: 12px;
+	border-radius: 3px;
+}
+
+/* Properties of large button */
+.btn-lg
+{
+	color: #fff;
+	background-color: #5cb85c;
+	border-color: #4cae4c;
+	padding: 10px 16px;
+	font-size: 18px;
+	border-radius: 6px;
+}
+
+/* Properties of extra large button */
+.btn-xl
+{
+	color: #fff;
+	background-color: #ff0000;
+	border-color: #4cae4c;
+	padding: 16px 19px;
+	font-size: 20px;
+	border-radius: 8px;
+}
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 6. Submit Button HTML Source Code</h2>
+						<p>
+						Below is the HTML source code for the Submit Button. The submit button is one of the most
+						common type of button found on any website. In this example, the button is part of a form.
+						</p>	
+<div class="boxed">						 
+<xmp>
+ <html lang="en">
+ <head>
+	<title>Simple Form</title>
+ </head>
+ <body>
+	<form>
+	 <input type="text" placeholder="First Name">
+	 <input type="text" placeholder="Last Name">
+	 <input type="email" placeholder="Email Address">
+	 <input type="password" placeholder="Password">
+	 <input type="password" placeholder="Confirm Password">
+		
+	 <div>
+		<input type="radio" id="male" name="gender">
+		<label for="male">Male</label>
+		<input type="radio" id="female" name="gender">
+		<label for="female">Female</label>
+	</div>
+		
+	<input type="submit" name="Submit">
+		
+	</form>
+ </body>
+ </html>
+ </xmp> 
+ </div>						
+					</li>
+					<li>
+						<h2>No 6. Submit Button CSS Source Code</h2>
+						<p>
+						Below is the CSS source code for the Submit Button. The form has been styled with a light
+						blue background and elements are positioned at the center of the page. Typically the 
+						submit button will take the information from the form and pass it along to a database or an 
+						external application.
+						</p>	
+<div class="boxed">						 
+<xmp>
+/* Adding background colour and a font */
+body
+{
+	background-color: #e8f3f8;
+	font: sans-serif;
+}
+
+/* Properties of the heading text */
+h1
+{
+	text-align: center;
+	font-size: 50px;
+	color: steelblue;
+}
+
+/* Properties of the main form content */
+form
+{
+	margin: 20px auto;
+	text-align: center;
+	width: 320px;
+	color: steelblue;
+}
+
+/* Properties of form input */
+input
+{
+	padding: 10px;
+	font-size: inherit;
+}
+
+/* Properties of regular textbox fields */
+input[type="text"]
+{
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+	background: #FAF6D9;
+}
+
+/* Properties of password text field */
+input[type="password"]
+{
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+	background: #FAF6D9;
+}
+
+/* Properties of email text field */
+input[type="email"]
+{
+	display: block;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 2px solid steelblue;
+	background: #FAF6D9;
+}
+
+/* Properties of radio button */
+input[type="radio"]
+{
+	margin: 0 8px 25px 18px;
+}
+
+/* Properties of radio button - Choosing
+one or the other */
+input[type="radio"]:first-child
+{
+	margin-left: 0;
+}
+
+/* Properties of submit button */
+input[type="submit"]
+{
+	width: 344px;
+	height: 45px;
+	border: none;
+	background: steelblue;
+	color: white;
+}
+
+/* Changing style of submit button when clicked */
+input[type="submit"]:focus
+{
+	width: 344px;
+	height: 45px;
+	border: solid steelblue;
+	background: white;
+	color: steelblue;
+}
+
+/* Text fields have white background within the form*/	
+input:focus
+{
+	background: white;
+}
+
+/* Radio button will highlight based on checked
+or unchecked*/
+input[type="radio"]:checked + label
+{
+	font-weight: bold;
+	font-size: 18px;
+}
+ </xmp> 
+ </div>						
+					</li>
+				</ul>
+			</article>
+			
+			<aside id="sidebar">
+				<div class="dark">
+					<div class="dark-img">
+						<h2>Component Usage</h2>
+						<p>Buttons can be found almost everywhere on a website. the most common 
+						places in which buttons can be found are usually; contact/registration forms,
+						login forms and various other places which require user action to proceed to 
+						a new page.</p>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</section>
+	
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<br></br>
+	<footer>
+		<p>Web Design For Industry - SWD600 (Copyright &copy; 2018)</p>
+	</footer>
+	
+</body>
+</html> 

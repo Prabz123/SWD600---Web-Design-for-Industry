@@ -1,0 +1,20 @@
+body
+{
+	background: url(4.jpg);
+}
+
+.ghost
+{
+	border: 1px solid white;
+	background-color: rgba(225,255,255,0);
+	color: #fff;
+	padding: 10px 20px;
+	border-radius: 100px;
+	transition: 0.6s;
+}
+
+.ghost:hover
+{
+	background-color: rgba(225,255,255,1);
+	color: #000;
+}

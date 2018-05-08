@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Hover Animation</title>
+	<link rel="stylesheet" href="http://code.ionicframework.com/
+	ionicons/2.0.1/css/ionicons.min.css">
+<style>
+body
+{
+	background: #eee;
+}
+
+.btn
+{
+	width: 160px;
+	height: 50px;
+	background: tomato;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+	transition: all 0.5s;
+	overflow: hidden;
+}
+
+.btn:before
+{
+	content: "hover over me";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	transition: all 0.3s;
+}
+
+.btn:hover:before
+{
+	top: -30px;
+}
+
+.btn:after
+{
+	font-family: 'ionicons';
+	content: '\f43a';
+	position: absolute;
+	top: calc(100% + 30px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 30px;
+	transition: all 0.3s;
+}
+
+.btn:hover:after
+{
+	top: 50%;
+}
+
+</style>	
+</head>
+
+<body>
+	<h1>Hover Animation Button Example</h1>
+	
+	<div class="btn">
+	
+	</div>
+	
+</body>
+</html>
